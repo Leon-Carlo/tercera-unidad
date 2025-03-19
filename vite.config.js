@@ -2,17 +2,16 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
-    plugins: [
-        laravel({
-            input: [
-                'resources/css/app.css',
-                'resources/js/app.js',
-            ],
-            refresh: true,
-        }),
-    ],
+  plugins: [
+    laravel({
+      input: [
+        'resources/css/app.css',
+        'resources/js/app.js',
+      ],
+      refresh: true,
+    }),
+  ],
   build: {
-    outDir: 'dist',  // Asegúrate de que 'dist' esté configurado como salida
+    outDir: 'public/build',  // Especifica que la salida será en 'public/build'
   },
-};
 });
