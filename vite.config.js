@@ -11,4 +11,8 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+  build: {
+    outDir: 'dist',  // Asegúrate de que 'dist' esté configurado como salida
+  },
+};
 });
